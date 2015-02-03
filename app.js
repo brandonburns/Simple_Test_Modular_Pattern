@@ -1,3 +1,5 @@
 var hello = require('./hello');
 
-hello.greet('Brandon');
+var myArg = process.argv[2]
+
+console.log(hello.greet(myArg));
