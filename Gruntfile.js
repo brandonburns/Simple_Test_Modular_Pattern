@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 		jscs: {
       all: {
         options: {
-        	"standard": "google"
+        	"preset": "google"
         },
         files: {
           src: ['Gruntfile.js', 'test.js', 'app.js', 'hello.js'] 
