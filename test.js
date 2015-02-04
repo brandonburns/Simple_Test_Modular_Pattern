@@ -6,12 +6,12 @@ describe('hello', function() {
 		expect(hello.greet('Brandon')).to.eql("Hello" + " " + "Brandon");
 	});
 	it('Should not return an empty string', function() {
-		expect(hello.greet('')).to.not.be.empty;
+		expect(hello.greet('')).to.not.be.empty();
 	});
 	it('Should respond to its methods', function() {
 		expect(hello).itself.to.respondTo('greet');
 	});
 	it('Should show the given parameter as string', function() {
 		expect(hello.greet('Brandon')).to.have.string('Brandon');
-	})
+	});
 });
